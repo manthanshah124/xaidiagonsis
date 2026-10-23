@@ -1,0 +1,167 @@
+{
+  "splits": {
+    "train": {
+      "Apple_Apple_scab": 880,
+      "Apple_Black_rot": 864,
+      "Apple_Cedar_apple_rust": 384,
+      "Apple_healthy": 2308,
+      "Tomato_Bacterial_spot": 2984,
+      "Tomato_Early_blight": 1412,
+      "Tomato_healthy": 2216,
+      "Tomato_Late_blight": 2682,
+      "Tomato_Leaf_Mold": 1324,
+      "Tomato_mosaic_virus": 520,
+      "Tomato_Septoria_leaf_spot": 2458,
+      "Tomato_Spider_mites": 2366,
+      "Tomato_Target_Spot": 1956,
+      "Tomato_Yellow_Leaf_Curl_Virus": 7492
+    },
+    "val": {
+      "Apple_Apple_scab": 186,
+      "Apple_Black_rot": 186,
+      "Apple_Cedar_apple_rust": 82,
+      "Apple_healthy": 494,
+      "Tomato_Bacterial_spot": 632,
+      "Tomato_Early_blight": 294,
+      "Tomato_healthy": 484,
+      "Tomato_Late_blight": 572,
+      "Tomato_Leaf_Mold": 294,
+      "Tomato_mosaic_virus": 112,
+      "Tomato_Septoria_leaf_spot": 536,
+      "Tomato_Spider_mites": 488,
+      "Tomato_Target_Spot": 428,
+      "Tomato_Yellow_Leaf_Curl_Virus": 1600
+    },
+    "test": {
+      "Apple_Apple_scab": 194,
+      "Apple_Black_rot": 192,
+      "Apple_Cedar_apple_rust": 84,
+      "Apple_healthy": 488,
+      "Tomato_Bacterial_spot": 638,
+      "Tomato_Early_blight": 294,
+      "Tomato_healthy": 482,
+      "Tomato_Late_blight": 564,
+      "Tomato_Leaf_Mold": 286,
+      "Tomato_mosaic_virus": 114,
+      "Tomato_Septoria_leaf_spot": 548,
+      "Tomato_Spider_mites": 498,
+      "Tomato_Target_Spot": 424,
+      "Tomato_Yellow_Leaf_Curl_Virus": 1622
+    },
+    "test_field": {
+      "Apple_Apple_scab": 20,
+      "Apple_Black_rot": 20,
+      "Apple_Cedar_apple_rust": 20,
+      "Apple_healthy": 18,
+      "Tomato_Bacterial_spot": 18,
+      "Tomato_Early_blight": 18,
+      "Tomato_healthy": 16,
+      "Tomato_Late_blight": 20,
+      "Tomato_Leaf_Mold": 12,
+      "Tomato_mosaic_virus": 20,
+      "Tomato_Septoria_leaf_spot": 24,
+      "Tomato_Spider_mites": 4,
+      "Tomato_Yellow_Leaf_Curl_Virus": 30
+    }
+  },
+  "overlap": {
+    "train_val_filename": 0,
+    "train_val_hash": 0,
+    "train_test_filename": 0,
+    "train_test_hash": 0,
+    "train_test_field_filename": 0,
+    "train_test_field_hash": 0,
+    "val_test_filename": 0,
+    "val_test_hash": 0
+  },
+  "class_balance": {
+    "train": {
+      "status": "ok",
+      "median_count": 2216,
+      "threshold": 221.60000000000002,
+      "imbalanced_classes": {},
+      "class_counts": {
+        "Apple_Apple_scab": 880,
+        "Apple_Black_rot": 864,
+        "Apple_Cedar_apple_rust": 384,
+        "Apple_healthy": 2308,
+        "Tomato_Bacterial_spot": 2984,
+        "Tomato_Early_blight": 1412,
+        "Tomato_healthy": 2216,
+        "Tomato_Late_blight": 2682,
+        "Tomato_Leaf_Mold": 1324,
+        "Tomato_mosaic_virus": 520,
+        "Tomato_Septoria_leaf_spot": 2458,
+        "Tomato_Spider_mites": 2366,
+        "Tomato_Target_Spot": 1956,
+        "Tomato_Yellow_Leaf_Curl_Virus": 7492
+      }
+    },
+    "val": {
+      "status": "ok",
+      "median_count": 484,
+      "threshold": 48.400000000000006,
+      "imbalanced_classes": {},
+      "class_counts": {
+        "Apple_Apple_scab": 186,
+        "Apple_Black_rot": 186,
+        "Apple_Cedar_apple_rust": 82,
+        "Apple_healthy": 494,
+        "Tomato_Bacterial_spot": 632,
+        "Tomato_Early_blight": 294,
+        "Tomato_healthy": 484,
+        "Tomato_Late_blight": 572,
+        "Tomato_Leaf_Mold": 294,
+        "Tomato_mosaic_virus": 112,
+        "Tomato_Septoria_leaf_spot": 536,
+        "Tomato_Spider_mites": 488,
+        "Tomato_Target_Spot": 428,
+        "Tomato_Yellow_Leaf_Curl_Virus": 1600
+      }
+    },
+    "test": {
+      "status": "ok",
+      "median_count": 482,
+      "threshold": 48.2,
+      "imbalanced_classes": {},
+      "class_counts": {
+        "Apple_Apple_scab": 194,
+        "Apple_Black_rot": 192,
+        "Apple_Cedar_apple_rust": 84,
+        "Apple_healthy": 488,
+        "Tomato_Bacterial_spot": 638,
+        "Tomato_Early_blight": 294,
+        "Tomato_healthy": 482,
+        "Tomato_Late_blight": 564,
+        "Tomato_Leaf_Mold": 286,
+        "Tomato_mosaic_virus": 114,
+        "Tomato_Septoria_leaf_spot": 548,
+        "Tomato_Spider_mites": 498,
+        "Tomato_Target_Spot": 424,
+        "Tomato_Yellow_Leaf_Curl_Virus": 1622
+      }
+    },
+    "test_field": {
+      "status": "ok",
+      "median_count": 20,
+      "threshold": 2.0,
+      "imbalanced_classes": {},
+      "class_counts": {
+        "Apple_Apple_scab": 20,
+        "Apple_Black_rot": 20,
+        "Apple_Cedar_apple_rust": 20,
+        "Apple_healthy": 18,
+        "Tomato_Bacterial_spot": 18,
+        "Tomato_Early_blight": 18,
+        "Tomato_healthy": 16,
+        "Tomato_Late_blight": 20,
+        "Tomato_Leaf_Mold": 12,
+        "Tomato_mosaic_virus": 20,
+        "Tomato_Septoria_leaf_spot": 24,
+        "Tomato_Spider_mites": 4,
+        "Tomato_Yellow_Leaf_Curl_Virus": 30
+      }
+    }
+  },
+  "total_images": 42902
+}

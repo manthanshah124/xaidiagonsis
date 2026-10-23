@@ -1,0 +1,465 @@
+{
+  "test": {
+    "split": "test",
+    "accuracy": 0.045737398879900436,
+    "macro_precision": 0.003266957062850031,
+    "macro_recall": 0.07142857142857142,
+    "macro_f1": 0.006248140434394526,
+    "weighted_precision": 0.002091909656299118,
+    "weighted_recall": 0.045737398879900436,
+    "weighted_f1": 0.004000831678277515,
+    "per_class": {
+      "Tomato_Bacterial_spot": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 319,
+        "accuracy": 0.0
+      },
+      "Tomato_Early_blight": {
+        "precision": 0.045737398879900436,
+        "recall": 1.0,
+        "f1": 0.08747396608152336,
+        "support": 147,
+        "accuracy": 1.0
+      },
+      "Tomato_healthy": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 241,
+        "accuracy": 0.0
+      },
+      "Tomato_Late_blight": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 282,
+        "accuracy": 0.0
+      },
+      "Tomato_Leaf_Mold": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 143,
+        "accuracy": 0.0
+      },
+      "Tomato_Septoria_leaf_spot": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 274,
+        "accuracy": 0.0
+      },
+      "Tomato_Spider_mites": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 249,
+        "accuracy": 0.0
+      },
+      "Tomato_Target_Spot": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 212,
+        "accuracy": 0.0
+      },
+      "Tomato_mosaic_virus": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 57,
+        "accuracy": 0.0
+      },
+      "Tomato_Yellow_Leaf_Curl_Virus": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 811,
+        "accuracy": 0.0
+      },
+      "Apple_Apple_scab": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 97,
+        "accuracy": 0.0
+      },
+      "Apple_Black_rot": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 96,
+        "accuracy": 0.0
+      },
+      "Apple_Cedar_apple_rust": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 42,
+        "accuracy": 0.0
+      },
+      "Apple_healthy": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 244,
+        "accuracy": 0.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        0,
+        319,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        147,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        241,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        282,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        143,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        274,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        249,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        212,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        57,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        811,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        97,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        96,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        42,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        244,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "classification_report": {
+      "Tomato_Bacterial_spot": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 319.0
+      },
+      "Tomato_Early_blight": {
+        "precision": 0.045737398879900436,
+        "recall": 1.0,
+        "f1-score": 0.08747396608152336,
+        "support": 147.0
+      },
+      "Tomato_healthy": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 241.0
+      },
+      "Tomato_Late_blight": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 282.0
+      },
+      "Tomato_Leaf_Mold": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 143.0
+      },
+      "Tomato_Septoria_leaf_spot": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 274.0
+      },
+      "Tomato_Spider_mites": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 249.0
+      },
+      "Tomato_Target_Spot": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 212.0
+      },
+      "Tomato_mosaic_virus": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 57.0
+      },
+      "Tomato_Yellow_Leaf_Curl_Virus": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 811.0
+      },
+      "Apple_Apple_scab": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 97.0
+      },
+      "Apple_Black_rot": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 96.0
+      },
+      "Apple_Cedar_apple_rust": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 42.0
+      },
+      "Apple_healthy": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 244.0
+      },
+      "accuracy": 0.045737398879900436,
+      "macro avg": {
+        "precision": 0.003266957062850031,
+        "recall": 0.07142857142857142,
+        "f1-score": 0.006248140434394526,
+        "support": 3214.0
+      },
+      "weighted avg": {
+        "precision": 0.002091909656299118,
+        "recall": 0.045737398879900436,
+        "f1-score": 0.004000831678277515,
+        "support": 3214.0
+      }
+    },
+    "num_samples": 3214
+  },
+  "test_field": null,
+  "model_info": {
+    "model_path": "D:\\SEM VII\\Mega Project\\xai-plantdoc\\ml\\models\\plant_model.keras",
+    "num_classes": 14,
+    "class_names": [
+      "Tomato_Bacterial_spot",
+      "Tomato_Early_blight",
+      "Tomato_healthy",
+      "Tomato_Late_blight",
+      "Tomato_Leaf_Mold",
+      "Tomato_Septoria_leaf_spot",
+      "Tomato_Spider_mites",
+      "Tomato_Target_Spot",
+      "Tomato_mosaic_virus",
+      "Tomato_Yellow_Leaf_Curl_Virus",
+      "Apple_Apple_scab",
+      "Apple_Black_rot",
+      "Apple_Cedar_apple_rust",
+      "Apple_healthy"
+    ],
+    "input_shape": [
+      224,
+      224,
+      3
+    ],
+    "preprocessing": "MobileNetV2 [-1, 1] normalization"
+  }
+}

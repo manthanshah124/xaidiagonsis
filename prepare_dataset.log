@@ -1,0 +1,240 @@
+2026-10-20 20:05:55,282 - INFO - ============================================================
+2026-10-20 20:05:55,282 - INFO - Starting dataset preparation
+2026-10-20 20:05:55,282 - INFO - Selected classes: ['Tomato___Bacterial_spot', 'Tomato___Early_blight', 'Tomato___healthy', 'Tomato___Late_blight', 'Tomato___Leaf_Mold', 'Tomato___Septoria_leaf_spot', 'Tomato___Spider_mites Two-spotted_spider_mite', 'Tomato___Target_Spot', 'Tomato___Tomato_mosaic_virus', 'Tomato___Tomato_Yellow_Leaf_Curl_Virus', 'Apple___Apple_scab', 'Apple___Black_rot', 'Apple___Cedar_apple_rust', 'Apple___healthy']
+2026-10-20 20:05:55,282 - INFO - Target size: (224, 224)
+2026-10-20 20:05:55,282 - INFO - Split ratios: train=0.7, val=0.15, test=0.15
+2026-10-20 20:05:55,283 - INFO - Random seed: 42
+2026-10-20 20:05:55,283 - INFO - Perceptual hash threshold: 8
+2026-10-20 20:05:55,283 - INFO - Collecting images from PlantVillage...
+2026-10-20 20:05:55,292 - INFO - Found 2127 images in Tomato___Bacterial_spot
+2026-10-20 20:06:02,070 - INFO - Found 1000 images in Tomato___Early_blight
+2026-10-20 20:06:05,107 - INFO - Found 1591 images in Tomato___healthy
+2026-10-20 20:06:10,175 - INFO - Found 1909 images in Tomato___Late_blight
+2026-10-20 20:06:15,778 - INFO - Found 952 images in Tomato___Leaf_Mold
+2026-10-20 20:06:18,714 - INFO - Found 1771 images in Tomato___Septoria_leaf_spot
+2026-10-20 20:06:24,174 - INFO - Found 1676 images in Tomato___Spider_mites Two-spotted_spider_mite
+2026-10-20 20:06:29,319 - INFO - Found 1404 images in Tomato___Target_Spot
+2026-10-20 20:06:33,603 - INFO - Found 373 images in Tomato___Tomato_mosaic_virus
+2026-10-20 20:06:34,773 - INFO - Found 5357 images in Tomato___Tomato_Yellow_Leaf_Curl_Virus
+2026-10-20 20:06:50,438 - INFO - Found 630 images in Apple___Apple_scab
+2026-10-20 20:06:52,305 - INFO - Found 621 images in Apple___Black_rot
+2026-10-20 20:06:54,194 - INFO - Found 275 images in Apple___Cedar_apple_rust
+2026-10-20 20:06:54,995 - INFO - Found 1645 images in Apple___healthy
+2026-10-20 20:06:59,909 - INFO - Total images: 21331, Valid: 21331, Corrupted: 0
+2026-10-20 20:06:59,909 - INFO - Computing perceptual hashes and grouping near-duplicates...
+2026-10-20 20:16:08,747 - INFO - ============================================================
+2026-10-20 20:16:08,747 - INFO - Starting dataset preparation
+2026-10-20 20:16:08,747 - INFO - Selected classes: ['Tomato___Bacterial_spot', 'Tomato___Early_blight', 'Tomato___healthy', 'Tomato___Late_blight', 'Tomato___Leaf_Mold', 'Tomato___Septoria_leaf_spot', 'Tomato___Spider_mites Two-spotted_spider_mite', 'Tomato___Target_Spot', 'Tomato___Tomato_mosaic_virus', 'Tomato___Tomato_Yellow_Leaf_Curl_Virus', 'Apple___Apple_scab', 'Apple___Black_rot', 'Apple___Cedar_apple_rust', 'Apple___healthy']
+2026-10-20 20:16:08,748 - INFO - Target size: (224, 224)
+2026-10-20 20:16:08,748 - INFO - Split ratios: train=0.7, val=0.15, test=0.15
+2026-10-20 20:16:08,748 - INFO - Random seed: 42
+2026-10-20 20:16:08,748 - INFO - Perceptual hash threshold: 8
+2026-10-20 20:16:08,748 - INFO - Collecting images from PlantVillage...
+2026-10-20 20:16:08,757 - INFO - Found 2127 images in Tomato___Bacterial_spot
+2026-10-20 20:16:14,568 - INFO - Found 1000 images in Tomato___Early_blight
+2026-10-20 20:16:17,161 - INFO - Found 1591 images in Tomato___healthy
+2026-10-20 20:16:21,440 - INFO - Found 1909 images in Tomato___Late_blight
+2026-10-20 20:16:26,317 - INFO - Found 952 images in Tomato___Leaf_Mold
+2026-10-20 20:16:28,784 - INFO - Found 1771 images in Tomato___Septoria_leaf_spot
+2026-10-20 20:16:33,401 - INFO - Found 1676 images in Tomato___Spider_mites Two-spotted_spider_mite
+2026-10-20 20:16:37,621 - INFO - Found 1404 images in Tomato___Target_Spot
+2026-10-20 20:16:41,230 - INFO - Found 373 images in Tomato___Tomato_mosaic_virus
+2026-10-20 20:16:42,181 - INFO - Found 5357 images in Tomato___Tomato_Yellow_Leaf_Curl_Virus
+2026-10-20 20:16:54,805 - INFO - Found 630 images in Apple___Apple_scab
+2026-10-20 20:16:56,291 - INFO - Found 621 images in Apple___Black_rot
+2026-10-20 20:16:57,800 - INFO - Found 275 images in Apple___Cedar_apple_rust
+2026-10-20 20:16:58,442 - INFO - Found 1645 images in Apple___healthy
+2026-10-20 20:17:02,363 - INFO - Total images: 21331, Valid: 21331, Corrupted: 0
+2026-10-20 20:17:02,363 - INFO - Computing perceptual hashes and grouping near-duplicates...
+2026-10-20 20:36:21,810 - INFO - ============================================================
+2026-10-20 20:36:21,810 - INFO - Starting dataset preparation
+2026-10-20 20:36:21,810 - INFO - Selected classes: ['Tomato___Bacterial_spot', 'Tomato___Early_blight', 'Tomato___healthy', 'Tomato___Late_blight', 'Tomato___Leaf_Mold', 'Tomato___Septoria_leaf_spot', 'Tomato___Spider_mites Two-spotted_spider_mite', 'Tomato___Target_Spot', 'Tomato___Tomato_mosaic_virus', 'Tomato___Tomato_Yellow_Leaf_Curl_Virus', 'Apple___Apple_scab', 'Apple___Black_rot', 'Apple___Cedar_apple_rust', 'Apple___healthy']
+2026-10-20 20:36:21,810 - INFO - Target size: (224, 224)
+2026-10-20 20:36:21,810 - INFO - Split ratios: train=0.7, val=0.15, test=0.15
+2026-10-20 20:36:21,810 - INFO - Random seed: 42
+2026-10-20 20:36:21,810 - INFO - Perceptual hash threshold: 8
+2026-10-20 20:36:21,810 - INFO - Collecting images from PlantVillage...
+2026-10-20 20:36:21,820 - INFO - Found 2127 images in Tomato___Bacterial_spot
+2026-10-20 20:36:27,109 - INFO - Found 1000 images in Tomato___Early_blight
+2026-10-20 20:36:29,444 - INFO - Found 1591 images in Tomato___healthy
+2026-10-20 20:36:33,300 - INFO - Found 1909 images in Tomato___Late_blight
+2026-10-20 20:36:37,783 - INFO - Found 952 images in Tomato___Leaf_Mold
+2026-10-20 20:36:40,033 - INFO - Found 1771 images in Tomato___Septoria_leaf_spot
+2026-10-20 20:36:44,253 - INFO - Found 1676 images in Tomato___Spider_mites Two-spotted_spider_mite
+2026-10-20 20:36:48,303 - INFO - Found 1404 images in Tomato___Target_Spot
+2026-10-20 20:36:51,685 - INFO - Found 373 images in Tomato___Tomato_mosaic_virus
+2026-10-20 20:36:52,597 - INFO - Found 5357 images in Tomato___Tomato_Yellow_Leaf_Curl_Virus
+2026-10-20 20:37:04,962 - INFO - Found 630 images in Apple___Apple_scab
+2026-10-20 20:37:06,440 - INFO - Found 621 images in Apple___Black_rot
+2026-10-20 20:37:07,923 - INFO - Found 275 images in Apple___Cedar_apple_rust
+2026-10-20 20:37:08,549 - INFO - Found 1645 images in Apple___healthy
+2026-10-20 20:37:12,347 - INFO - Total images: 21331, Valid: 21331, Corrupted: 0
+2026-10-20 20:37:12,347 - INFO - Computing perceptual hashes and grouping near-duplicates...
+2026-10-20 21:07:27,939 - INFO - ============================================================
+2026-10-20 21:07:27,939 - INFO - Starting dataset preparation
+2026-10-20 21:07:27,939 - INFO - Selected classes: ['Tomato___Bacterial_spot', 'Tomato___Early_blight', 'Tomato___healthy', 'Tomato___Late_blight', 'Tomato___Leaf_Mold', 'Tomato___Septoria_leaf_spot', 'Tomato___Spider_mites Two-spotted_spider_mite', 'Tomato___Target_Spot', 'Tomato___Tomato_mosaic_virus', 'Tomato___Tomato_Yellow_Leaf_Curl_Virus', 'Apple___Apple_scab', 'Apple___Black_rot', 'Apple___Cedar_apple_rust', 'Apple___healthy']
+2026-10-20 21:07:27,939 - INFO - Target size: (224, 224)
+2026-10-20 21:07:27,939 - INFO - Split ratios: train=0.7, val=0.15, test=0.15
+2026-10-20 21:07:27,939 - INFO - Random seed: 42
+2026-10-20 21:07:27,939 - INFO - Perceptual hash threshold: 8
+2026-10-20 21:07:27,939 - INFO - Collecting images from PlantVillage...
+2026-10-20 21:07:27,949 - INFO - Found 2127 images in Tomato___Bacterial_spot
+2026-10-20 21:07:33,871 - INFO - Found 1000 images in Tomato___Early_blight
+2026-10-20 21:07:36,499 - INFO - Found 1591 images in Tomato___healthy
+2026-10-20 21:07:40,861 - INFO - Found 1909 images in Tomato___Late_blight
+2026-10-20 21:07:45,796 - INFO - Found 952 images in Tomato___Leaf_Mold
+2026-10-20 21:07:48,299 - INFO - Found 1771 images in Tomato___Septoria_leaf_spot
+2026-10-20 21:07:52,998 - INFO - Found 1676 images in Tomato___Spider_mites Two-spotted_spider_mite
+2026-10-20 21:07:57,522 - INFO - Found 1404 images in Tomato___Target_Spot
+2026-10-20 21:08:01,327 - INFO - Found 373 images in Tomato___Tomato_mosaic_virus
+2026-10-20 21:08:02,368 - INFO - Found 5357 images in Tomato___Tomato_Yellow_Leaf_Curl_Virus
+2026-10-20 21:08:16,255 - INFO - Found 630 images in Apple___Apple_scab
+2026-10-20 21:08:17,859 - INFO - Found 621 images in Apple___Black_rot
+2026-10-20 21:08:19,525 - INFO - Found 275 images in Apple___Cedar_apple_rust
+2026-10-20 21:08:20,239 - INFO - Found 1645 images in Apple___healthy
+2026-10-20 21:08:24,580 - INFO - Total images: 21331, Valid: 21331, Corrupted: 0
+2026-10-20 21:08:24,580 - INFO - Computing perceptual hashes and grouping near-duplicates...
+2026-10-20 21:47:37,046 - INFO - Formed 19738 groups from 21331 valid images
+2026-10-20 21:47:37,048 - INFO - Group size stats: min=1, max=8, mean=1.1, median=1.0
+2026-10-20 21:47:37,048 - INFO - Performing stratified split...
+2026-10-20 21:47:37,054 - INFO - Split sizes: train=14923, val=3194, test=3214
+2026-10-20 21:47:37,054 - INFO - Saving train split (14923 images)...
+2026-10-20 21:48:23,277 - INFO - Saving val split (3194 images)...
+2026-10-20 21:48:33,728 - INFO - Saving test split (3214 images)...
+2026-10-20 21:48:44,656 - INFO - Copying PlantDoc images as test_field...
+2026-10-20 21:48:49,638 - INFO - Saved class names to D:\SEM VII\Mega Project\xai-plantdoc\ml\models\class_names.json
+2026-10-20 21:48:49,639 - INFO - Saved preparation report to D:\SEM VII\Mega Project\xai-plantdoc\ml\reports\dataset_preparation_report.json
+2026-10-20 21:48:49,639 - INFO - ============================================================
+2026-10-20 21:48:49,639 - INFO - DATASET PREPARATION COMPLETE
+2026-10-20 21:48:49,639 - INFO - ============================================================
+2026-10-20 21:48:49,639 - INFO - train: 14923 images
+2026-10-20 21:48:49,639 - INFO -   Apple_Apple_scab: 440
+2026-10-20 21:48:49,639 - INFO -   Apple_Black_rot: 432
+2026-10-20 21:48:49,639 - INFO -   Apple_Cedar_apple_rust: 192
+2026-10-20 21:48:49,639 - INFO -   Apple_healthy: 1154
+2026-10-20 21:48:49,639 - INFO -   Tomato_Bacterial_spot: 1492
+2026-10-20 21:48:49,639 - INFO -   Tomato_Early_blight: 706
+2026-10-20 21:48:49,639 - INFO -   Tomato_Late_blight: 1341
+2026-10-20 21:48:49,639 - INFO -   Tomato_Leaf_Mold: 662
+2026-10-20 21:48:49,639 - INFO -   Tomato_Septoria_leaf_spot: 1229
+2026-10-20 21:48:49,639 - INFO -   Tomato_Spider_mites: 1183
+2026-10-20 21:48:49,639 - INFO -   Tomato_Target_Spot: 978
+2026-10-20 21:48:49,640 - INFO -   Tomato_Yellow_Leaf_Curl_Virus: 3746
+2026-10-20 21:48:49,640 - INFO -   Tomato_healthy: 1108
+2026-10-20 21:48:49,640 - INFO -   Tomato_mosaic_virus: 260
+2026-10-20 21:48:49,640 - INFO - val: 3194 images
+2026-10-20 21:48:49,640 - INFO -   Apple_Apple_scab: 93
+2026-10-20 21:48:49,640 - INFO -   Apple_Black_rot: 93
+2026-10-20 21:48:49,640 - INFO -   Apple_Cedar_apple_rust: 41
+2026-10-20 21:48:49,640 - INFO -   Apple_healthy: 247
+2026-10-20 21:48:49,640 - INFO -   Tomato_Bacterial_spot: 316
+2026-10-20 21:48:49,640 - INFO -   Tomato_Early_blight: 147
+2026-10-20 21:48:49,640 - INFO -   Tomato_Late_blight: 286
+2026-10-20 21:48:49,640 - INFO -   Tomato_Leaf_Mold: 147
+2026-10-20 21:48:49,640 - INFO -   Tomato_Septoria_leaf_spot: 268
+2026-10-20 21:48:49,640 - INFO -   Tomato_Spider_mites: 244
+2026-10-20 21:48:49,640 - INFO -   Tomato_Target_Spot: 214
+2026-10-20 21:48:49,640 - INFO -   Tomato_Yellow_Leaf_Curl_Virus: 800
+2026-10-20 21:48:49,640 - INFO -   Tomato_healthy: 242
+2026-10-20 21:48:49,640 - INFO -   Tomato_mosaic_virus: 56
+2026-10-20 21:48:49,640 - INFO - test: 3214 images
+2026-10-20 21:48:49,640 - INFO -   Apple_Apple_scab: 97
+2026-10-20 21:48:49,640 - INFO -   Apple_Black_rot: 96
+2026-10-20 21:48:49,640 - INFO -   Apple_Cedar_apple_rust: 42
+2026-10-20 21:48:49,640 - INFO -   Apple_healthy: 244
+2026-10-20 21:48:49,640 - INFO -   Tomato_Bacterial_spot: 319
+2026-10-20 21:48:49,640 - INFO -   Tomato_Early_blight: 147
+2026-10-20 21:48:49,640 - INFO -   Tomato_Late_blight: 282
+2026-10-20 21:48:49,640 - INFO -   Tomato_Leaf_Mold: 143
+2026-10-20 21:48:49,640 - INFO -   Tomato_Septoria_leaf_spot: 274
+2026-10-20 21:48:49,640 - INFO -   Tomato_Spider_mites: 249
+2026-10-20 21:48:49,640 - INFO -   Tomato_Target_Spot: 212
+2026-10-20 21:48:49,640 - INFO -   Tomato_Yellow_Leaf_Curl_Virus: 811
+2026-10-20 21:48:49,640 - INFO -   Tomato_healthy: 241
+2026-10-20 21:48:49,640 - INFO -   Tomato_mosaic_virus: 57
+2026-10-20 21:48:49,640 - INFO - test_field: 120 images
+2026-10-20 21:48:49,640 - INFO -   Apple_Apple_scab: 10
+2026-10-20 21:48:49,640 - INFO -   Apple_Black_rot: 10
+2026-10-20 21:48:49,640 - INFO -   Apple_Cedar_apple_rust: 10
+2026-10-20 21:48:49,640 - INFO -   Apple_healthy: 9
+2026-10-20 21:48:49,640 - INFO -   Tomato_Bacterial_spot: 9
+2026-10-20 21:48:49,640 - INFO -   Tomato_Early_blight: 9
+2026-10-20 21:48:49,640 - INFO -   Tomato_Late_blight: 10
+2026-10-20 21:48:49,640 - INFO -   Tomato_Leaf_Mold: 6
+2026-10-20 21:48:49,641 - INFO -   Tomato_Septoria_leaf_spot: 12
+2026-10-20 21:48:49,641 - INFO -   Tomato_Spider_mites: 2
+2026-10-20 21:48:49,641 - INFO -   Tomato_Yellow_Leaf_Curl_Virus: 15
+2026-10-20 21:48:49,641 - INFO -   Tomato_healthy: 8
+2026-10-20 21:48:49,641 - INFO -   Tomato_mosaic_virus: 10
+2026-10-21 11:57:38,282 - INFO - ============================================================
+2026-10-21 11:57:38,282 - INFO - Starting dataset preparation
+2026-10-21 11:57:38,282 - INFO - Selected classes: ['Tomato___Bacterial_spot', 'Tomato___Early_blight', 'Tomato___healthy', 'Tomato___Late_blight', 'Tomato___Leaf_Mold', 'Tomato___Septoria_leaf_spot', 'Tomato___Spider_mites Two-spotted_spider_mite', 'Tomato___Target_Spot', 'Tomato___Tomato_mosaic_virus', 'Tomato___Tomato_Yellow_Leaf_Curl_Virus', 'Apple___Apple_scab', 'Apple___Black_rot', 'Apple___Cedar_apple_rust', 'Apple___healthy']
+2026-10-21 11:57:38,282 - INFO - Target size: (224, 224)
+2026-10-21 11:57:38,282 - INFO - Split ratios: train=0.7, val=0.15, test=0.15
+2026-10-21 11:57:38,282 - INFO - Random seed: 42
+2026-10-21 11:57:38,282 - INFO - Perceptual hash threshold: 4
+2026-10-21 11:57:38,283 - INFO - Collecting images from PlantVillage...
+2026-10-21 11:57:38,292 - INFO - Found 2127 images in Tomato___Bacterial_spot
+2026-10-21 11:57:43,986 - INFO - Found 1000 images in Tomato___Early_blight
+2026-10-21 11:57:46,413 - INFO - Found 1591 images in Tomato___healthy
+2026-10-21 11:57:50,728 - INFO - Found 1909 images in Tomato___Late_blight
+2026-10-21 11:57:55,851 - INFO - Found 952 images in Tomato___Leaf_Mold
+2026-10-21 11:57:58,524 - INFO - Found 1771 images in Tomato___Septoria_leaf_spot
+2026-10-21 11:58:03,419 - INFO - Found 1676 images in Tomato___Spider_mites Two-spotted_spider_mite
+2026-10-21 11:58:08,305 - INFO - Found 1404 images in Tomato___Target_Spot
+2026-10-21 11:58:12,090 - INFO - Found 373 images in Tomato___Tomato_mosaic_virus
+2026-10-21 11:58:13,034 - INFO - Found 5357 images in Tomato___Tomato_Yellow_Leaf_Curl_Virus
+2026-10-21 11:58:26,158 - INFO - Found 630 images in Apple___Apple_scab
+2026-10-21 11:58:27,730 - INFO - Found 621 images in Apple___Black_rot
+2026-10-21 11:58:29,337 - INFO - Found 275 images in Apple___Cedar_apple_rust
+2026-10-21 11:58:29,993 - INFO - Found 1645 images in Apple___healthy
+2026-10-21 11:58:34,442 - INFO - Total images: 21331, Valid: 21331, Corrupted: 0
+2026-10-21 11:58:34,442 - INFO - Computing perceptual hashes and grouping near-duplicates...
+2026-10-21 12:07:46,297 - INFO - ============================================================
+2026-10-21 12:07:46,297 - INFO - Starting dataset preparation
+2026-10-21 12:07:46,297 - INFO - Selected classes: ['Tomato___Bacterial_spot', 'Tomato___Early_blight', 'Tomato___healthy', 'Tomato___Late_blight', 'Tomato___Leaf_Mold', 'Tomato___Septoria_leaf_spot', 'Tomato___Spider_mites Two-spotted_spider_mite', 'Tomato___Target_Spot', 'Tomato___Tomato_mosaic_virus', 'Tomato___Tomato_Yellow_Leaf_Curl_Virus', 'Apple___Apple_scab', 'Apple___Black_rot', 'Apple___Cedar_apple_rust', 'Apple___healthy']
+2026-10-21 12:07:46,297 - INFO - Target size: (224, 224)
+2026-10-21 12:07:46,297 - INFO - Split ratios: train=0.7, val=0.15, test=0.15
+2026-10-21 12:07:46,297 - INFO - Random seed: 42
+2026-10-21 12:07:46,297 - INFO - Perceptual hash threshold: 4
+2026-10-21 12:07:46,297 - INFO - Collecting images from PlantVillage...
+2026-10-21 12:07:46,307 - INFO - Found 2127 images in Tomato___Bacterial_spot
+2026-10-21 12:07:49,945 - INFO - Found 1000 images in Tomato___Early_blight
+2026-10-21 12:07:51,431 - INFO - Found 1591 images in Tomato___healthy
+2026-10-21 12:07:54,203 - INFO - Found 1909 images in Tomato___Late_blight
+2026-10-21 12:07:57,975 - INFO - Found 952 images in Tomato___Leaf_Mold
+2026-10-21 12:07:59,937 - INFO - Found 1771 images in Tomato___Septoria_leaf_spot
+2026-10-21 12:08:03,454 - INFO - Found 1676 images in Tomato___Spider_mites Two-spotted_spider_mite
+2026-10-21 12:08:07,271 - INFO - Found 1404 images in Tomato___Target_Spot
+2026-10-21 12:08:09,953 - INFO - Found 373 images in Tomato___Tomato_mosaic_virus
+2026-10-21 12:08:10,597 - INFO - Found 5357 images in Tomato___Tomato_Yellow_Leaf_Curl_Virus
+2026-10-21 12:08:19,666 - INFO - Found 630 images in Apple___Apple_scab
+2026-10-21 12:08:20,699 - INFO - Found 621 images in Apple___Black_rot
+2026-10-21 12:08:21,782 - INFO - Found 275 images in Apple___Cedar_apple_rust
+2026-10-21 12:08:22,227 - INFO - Found 1645 images in Apple___healthy
+2026-10-21 12:08:25,398 - INFO - Total images: 21331, Valid: 21331, Corrupted: 0
+2026-10-21 12:08:25,398 - INFO - Computing perceptual hashes and grouping near-duplicates...
+2026-10-21 12:28:46,858 - INFO - ============================================================
+2026-10-21 12:28:46,858 - INFO - Starting dataset preparation
+2026-10-21 12:28:46,858 - INFO - Selected classes: ['Tomato___Bacterial_spot', 'Tomato___Early_blight', 'Tomato___healthy', 'Tomato___Late_blight', 'Tomato___Leaf_Mold', 'Tomato___Septoria_leaf_spot', 'Tomato___Spider_mites Two-spotted_spider_mite', 'Tomato___Target_Spot', 'Tomato___Tomato_mosaic_virus', 'Tomato___Tomato_Yellow_Leaf_Curl_Virus', 'Apple___Apple_scab', 'Apple___Black_rot', 'Apple___Cedar_apple_rust', 'Apple___healthy']
+2026-10-21 12:28:46,858 - INFO - Target size: (224, 224)
+2026-10-21 12:28:46,858 - INFO - Split ratios: train=0.7, val=0.15, test=0.15
+2026-10-21 12:28:46,858 - INFO - Random seed: 42
+2026-10-21 12:28:46,858 - INFO - Perceptual hash threshold: 4
+2026-10-21 12:28:46,858 - INFO - Collecting images from PlantVillage...
+2026-10-21 12:28:46,868 - INFO - Found 2127 images in Tomato___Bacterial_spot
+2026-10-21 12:28:51,782 - INFO - Found 1000 images in Tomato___Early_blight
+2026-10-21 12:28:53,870 - INFO - Found 1591 images in Tomato___healthy
+2026-10-21 12:28:57,461 - INFO - Found 1909 images in Tomato___Late_blight
+2026-10-21 12:29:01,816 - INFO - Found 952 images in Tomato___Leaf_Mold
+2026-10-21 12:29:04,113 - INFO - Found 1771 images in Tomato___Septoria_leaf_spot
+2026-10-21 12:29:08,243 - INFO - Found 1676 images in Tomato___Spider_mites Two-spotted_spider_mite
+2026-10-21 12:29:12,484 - INFO - Found 1404 images in Tomato___Target_Spot
+2026-10-21 12:29:15,743 - INFO - Found 373 images in Tomato___Tomato_mosaic_virus
+2026-10-21 12:29:16,566 - INFO - Found 5357 images in Tomato___Tomato_Yellow_Leaf_Curl_Virus
+2026-10-21 12:29:27,881 - INFO - Found 630 images in Apple___Apple_scab
+2026-10-21 12:29:29,203 - INFO - Found 621 images in Apple___Black_rot
+2026-10-21 12:29:30,552 - INFO - Found 275 images in Apple___Cedar_apple_rust
+2026-10-21 12:29:31,117 - INFO - Found 1645 images in Apple___healthy
+2026-10-21 12:29:34,873 - INFO - Total images: 21331, Valid: 21331, Corrupted: 0
+2026-10-21 12:29:34,874 - INFO - Computing perceptual hashes and grouping near-duplicates...

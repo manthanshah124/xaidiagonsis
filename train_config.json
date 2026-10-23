@@ -1,0 +1,26 @@
+{
+  "model_name": "MobileNetV2",
+  "image_size": [
+    224,
+    224
+  ],
+  "num_classes": 14,
+  "dropout_rate": 0.3,
+  "last_conv_layer_name": "Conv_1",
+  "stage1_epochs": 15,
+  "stage1_lr": 0.001,
+  "stage1_batch_size": 32,
+  "stage2_epochs": 40,
+  "stage2_lr": 1e-05,
+  "stage2_batch_size": 16,
+  "fine_tune_layers": 100,
+  "early_stopping_patience": 15,
+  "reduce_lr_patience": 7,
+  "reduce_lr_factor": 0.5,
+  "min_lr": 1e-07,
+  "processed_dir": "D:\\SEM VII\\Mega Project\\xai-plantdoc\\ml\\data\\processed",
+  "models_dir": "D:\\SEM VII\\Mega Project\\xai-plantdoc\\ml\\models",
+  "reports_dir": "D:\\SEM VII\\Mega Project\\xai-plantdoc\\ml\\reports",
+  "seed": 42,
+  "class_weight_threshold": 50.0
+}

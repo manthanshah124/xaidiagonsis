@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="XAI-PlantDoc - Explainable plant disease detection">
+  <title>XAI-PlantDoc | Plant Disease Detection</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  {% csrf_token %}
+</head>
+<body>
+  <!-- Authentication screen: users see the dashboard only after signing in/up. -->
+  <section id="auth-screen" class="auth-screen">
+    <div class="auth-visual">
+      <a class="brand brand-light" href="#" aria-label="XAI-PlantDoc home">
+        <span class="brand-symbol">✿</span><span>XAI-PlantDoc</span>
+      </a>
+      <div class="auth-visual-copy">
+        <span class="eyebrow eyebrow-light">EXPLAINABLE AI · SMART AGRICULTURE</span>
+        <h1>Protect crops with confidence.</h1>
+        <p>Upload a leaf photo, get an AI diagnosis, and analyse with Grad-CAM heatmaps.</p>
+      </div>
+    </div>
+    <div class="auth-card">
+      <div class="auth-tabs" role="tablist" aria-label="Authentication">
+        <button id="signup-tab" class="auth-tab" role="tab" aria-selected="false" aria-controls="signup-panel">Create account</button>
+        <button id="signin-tab" class="auth-tab" role="tab" aria-selected="true" aria-controls="signin-panel">Sign in</button>
+      </div>
+      <div id="auth-message" class="auth-message" role="alert" aria-live="polite" hidden></div>
+
+      <form id="signup-form" class="auth-form" role="tabpanel" id="signup-panel" aria-labelledby="signup-tab" hidden>
+        <div class="field">
+          <label for="signup-name">Name</label>
+          <input id="signup-name" name="name" type="text" autocomplete="name" required placeholder="Alex Rivera">
+        </div>
+        <div class="field">
+          <label for="signup-email">Email</label>
+          <input id="signup-email" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
+        </div>
+        <div class="field">
+          <label for="signup-password">Password</label>
+          <input id="signup-password" name="password" type="password" autocomplete="new-password" required placeholder="At least 8 characters">
+        </div>
+        <button class="button button-primary button-full" type="submit">Create account</button>
+      </form>
+
+      <form id="signin-form" class="auth-form" role="tabpanel" id="signin-panel" aria-labelledby="signin-tab">
+        <div class="field">
+          <label for="signin-email">Email</label>
+          <input id="signin-email" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
+        </div>
+        <div class="field">
+          <label for="signin-password">Password</label>
+          <input id="signin-password" name="password" type="password" autocomplete="current-password" required placeholder="••••••••">
+        </div>
+        <button class="button button-primary button-full" type="submit">Sign in</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Main application screen: hidden until the user authenticates. -->
+  <section id="app-screen" class="app-screen" hidden>
+    <header class="app-header">
+      <div class="app-header-left">
+        <a class="brand" href="#" aria-label="XAI-PlantDoc home">
+          <span class="brand-symbol">✿</span><span>XAI-PlantDoc</span>
+        </a>
+        <nav class="app-tabs" role="tablist" aria-label="App sections">
+          <button class="app-tab" role="tab" aria-selected="true" aria-controls="overview-panel" data-tab="overview">Overview</button>
+          <button class="app-tab" role="tab" aria-selected="false" aria-controls="crop-disease-panel" data-tab="crop-disease">Crop disease</button>
+          <button class="app-tab" role="tab" aria-selected="false" aria-controls="dashboard-panel" data-tab="dashboard">Dashboard</button>
+        </nav>
+      </div>
+      <div class="app-header-right">
+        <span id="user-display-name" class="user-name"></span>
+        <button id="signout-btn" class="button button-quiet" type="button">Sign out</button>
+        <div id="user-avatar" class="user-avatar" aria-hidden="true"></div>
+      </div>
+    </header>
+
+    <main class="app-main">
+      <!-- Overview tab -->
+      <section id="overview-panel" class="tab-panel" role="tabpanel" aria-labelledby="overview-tab">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Welcome back</p>
+              <h2>Quick actions</h2>
+            </div>
+          </div>
+          <div class="overview-grid">
+            <article class="overview-card">
+              <div class="overview-icon">📷</div>
+              <h3>Analyze leaf</h3>
+              <p class="muted">Upload a photo and get an AI-powered disease prediction with explainable heatmaps.</p>
+              <button class="button button-primary" id="overview-analyze-btn" type="button">Analyze leaf</button>
+            </article>
+            <article class="overview-card">
+              <div class="overview-icon">📊</div>
+              <h3>Recent analyses</h3>
+              <p class="muted">Your prediction history will appear here.</p>
+              <div class="history-empty">No analyses yet.</div>
+            </article>
+            <article class="overview-card">
+              <div class="overview-icon">📚</div>
+              <h3>Supported crops</h3>
+              <p class="muted">Tomato (10 diseases) and Apple (4 diseases).</p>
+              <ul class="crop-list">
+                <li>Tomato: Bacterial spot, Early blight, Late blight, Leaf Mold, Septoria leaf spot, Spider mites, Target Spot, Mosaic virus, Yellow Leaf Curl Virus, Healthy</li>
+                <li>Apple: Apple scab, Black rot, Cedar apple rust, Healthy</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Crop disease tab (the main analysis interface) -->
+      <section id="crop-disease-panel" class="tab-panel" role="tabpanel" aria-labelledby="crop-disease-tab" hidden>
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Step 01 · Image input</p>
+              <h2>Upload leaf image</h2>
+              <p class="muted">Choose a JPG, JPEG, or PNG image. Maximum file size: 5 MB.</p>
+            </div>
+            <span class="step-pill">Grad-CAM heatmap included</span>
+          </div>
+
+          <div id="error-banner" class="notice notice-error" role="alert" aria-live="assertive" hidden>
+            <span aria-hidden="true">!</span><p id="error-message"></p>
+            <button id="dismiss-error" class="notice-dismiss" type="button" aria-label="Dismiss message">×</button>
+          </div>
+          <div id="success-banner" class="notice notice-success" role="status" aria-live="polite" hidden>
+            <span aria-hidden="true">✓</span><p id="success-message"></p>
+          </div>
+
+          <div class="workspace">
+            <form id="upload-form" class="upload-card" novalidate>
+              <div id="drop-zone" class="drop-zone" tabindex="0" role="button" aria-label="Choose or drop a leaf image">
+                <input id="file-input" name="image" type="file" accept="image/jpeg,image/png" hidden>
+                <div class="upload-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 16V4m-5 5 5-5 5 5"></path><path d="M5 14v5a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-5"></path>
+                  </svg>
+                </div>
+                <h3>Drop your leaf image here</h3>
+                <p class="muted">or <span class="text-link">browse files</span> on your device</p>
+                <p class="file-note">JPG / JPEG / PNG · Up to 5 MB</p>
+              </div>
+
+              <div id="preview-container" class="preview-card" hidden>
+                <div class="preview-topline">
+                  <div><strong>Selected image</strong><p id="preview-filename" class="muted small"></p></div>
+                  <button id="remove-image" class="button button-quiet" type="button">Remove</button>
+                </div>
+                <img id="image-preview" class="preview-image" src="" alt="Preview of selected plant leaf">
+              </div>
+
+              <button id="predict-btn" class="button button-primary button-full" type="submit" disabled>
+                <span id="predict-btn-label">Analyze disease</span>
+                <span aria-hidden="true">→</span>
+              </button>
+              <p class="fine-print">Upload a clear leaf photo for best results. The model detects 14 tomato and apple diseases.</p>
+            </form>
+
+            <aside class="result-card" aria-labelledby="result-heading">
+              <div class="result-heading-row">
+                <div>
+                  <p class="eyebrow">Step 02 · AI diagnosis</p>
+                  <h2 id="result-heading">Prediction result</h2>
+                </div>
+                <span class="result-indicator" id="result-indicator"><span class="status-dot"></span> Ready</span>
+              </div>
+
+              <div id="result-empty" class="result-empty">
+                <div class="result-leaf" aria-hidden="true">✿</div>
+                <h3>Results will appear here</h3>
+                <p class="muted">Select a leaf image, then choose <strong>Analyze disease</strong>. The model returns the disease label, confidence, and a Grad-CAM heatmap.</p>
+              </div>
+
+              <div id="result-content" class="result-content" hidden>
+                <div class="result-label">Predicted disease</div>
+                <h3 id="prediction-disease">—</h3>
+                <div class="confidence-row">
+                  <span class="muted">Confidence</span><strong id="confidence-value">—</strong>
+                </div>
+                <div class="progress-track"><div id="confidence-fill" class="progress-fill"></div></div>
+                <p id="prediction-message" class="muted result-message"></p>
+
+                <!-- Grad-CAM heatmap -->
+                <div id="gradcam-section" class="gradcam-section" hidden>
+                  <h4 class="gradcam-title">Explainability heatmap (Grad-CAM)</h4>
+                  <div class="gradcam-comparison">
+                    <div class="gradcam-pane">
+                      <p class="gradcam-caption">Original</p>
+                      <img id="gradcam-original" class="gradcam-image" src="" alt="Original leaf image">
+                    </div>
+                    <div class="gradcam-pane">
+                      <p class="gradcam-caption">Heatmap overlay</p>
+                      <img id="gradcam-overlay" class="gradcam-image" src="" alt="Grad-CAM heatmap overlay">
+                    </div>
+                  </div>
+                  <p class="gradcam-note">Red areas indicate regions the model focused on for this prediction.</p>
+                </div>
+
+                <!-- Top-3 predictions -->
+                <div id="top3-section" class="top3-section" hidden>
+                  <h4 class="top3-title">Top 3 predictions</h4>
+                  <ul id="top3-list" class="top3-list"></ul>
+                </div>
+
+                <!-- Low confidence warning -->
+                <div id="low-confidence-warning" class="notice notice-warning" hidden>
+                  <span aria-hidden="true">⚠</span>
+                  <p id="low-confidence-message"></p>
+                </div>
+              </div>
+
+              <div id="loading-state" class="loading-state" hidden>
+                <span class="spinner" aria-hidden="true"></span>
+                <p>Analyzing leaf image with AI…</p>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+    <!-- dashboard tab -->
+      <section id="dashboard-panel" class="tab-panel"
+         role="tabpanel" aria-labelledby="dashboard-tab" hidden>
+  <div class="container">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Plant Health Analytics</p>
+        <h2>Dashboard</h2>
+        <p class="muted">Overview of plant disease detection results.</p>
+      </div>
+    </div>
+
+    <div class="steps-grid">
+      <article class="step-card">
+        <span class="step-number">01</span>
+        <h3>Total Analyses</h3>
+        <p class="muted">Total plant images analyzed.</p>
+      </article>
+
+      <article class="step-card">
+        <span class="step-number">02</span>
+        <h3>Healthy Plants</h3>
+        <p class="muted">Number of plants classified as healthy.</p>
+      </article>
+
+      <article class="step-card">
+        <span class="step-number">03</span>
+        <h3>Disease Detection</h3>
+        <p class="muted">Detected plant diseases and their types.</p>
+      </article>
+
+      <article class="step-card">
+        <span class="step-number">04</span>
+        <h3>Model Performance</h3>
+        <p class="muted">Model accuracy and prediction confidence.</p>
+      </article>
+
+      <article class="step-card">
+        <span class="step-number">05</span>
+        <h3>XAI Insights</h3>
+        <p class="muted">Grad-CAM heatmaps explaining predictions.</p>
+      </article>
+    </div>
+  </div>
+</section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner"><span class="brand"><span class="brand-mark">✿</span> XAI-PlantDoc</span><span>Explainable AI for plant disease detection</span></div>
+    </footer>
+  </section>
+
+  <script src="{% static 'js/app.js' %}"></script>
+</body>
+</html>
